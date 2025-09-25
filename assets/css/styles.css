@@ -8,6 +8,7 @@
     --accent: #10b981; /* teal */
     --link: #6ee7b7;
     --border: #202636;
+    --oddrow: #1c222e;
 }
 
 @media (prefers-color-scheme: light) {
@@ -19,6 +20,7 @@
         --accent: #0a7;
         --link: #0a7;
         --border: #e5e7eb;
+        --oddrow: #f1f5f9;
     }
 }
 
@@ -68,12 +70,13 @@ a:hover {
     padding: .75rem 0;
 }
 
-.brand {
-    font-weight: 700;
-}
 
 .nav a {
     margin-left: 1rem;
+}
+
+.nav .active {
+    font-weight: 700;
 }
 
 
@@ -161,4 +164,34 @@ a:hover {
     display: block;
     border: solid 4px var(--border);
     border-radius: 30px;
+}
+
+#timetable {
+    width: 100%;
+    display: table;
+    white-space: nowrap;
+}
+
+#timetable thead {
+    text-align: left;
+    }
+
+#timetable thead tr {
+    background-color: var(--card);
+}
+
+#timetable td {
+    padding: 1em 1em 0 0;
+}
+
+#timetable td {
+    border-bottom: 1px solid var(--border);
+}
+
+#timetable-name {
+    width: 100%;
+}
+
+tr:nth-child(odd) {
+    background-color: var(--oddrow);
 }

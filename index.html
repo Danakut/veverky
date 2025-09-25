@@ -12,13 +12,11 @@
 <body>
 <header class="site-header">
     <div class="container header-inner">
-        <a class="brand" href="index.html">Hlavní stránka</a>
+        <span id="sprint" class="btn">SPRINT 2: 5.10. (ne) - 13.10. (po)</span>
         <nav aria-label="Main" class="nav">
-            <a href="https://drive.google.com/drive/folders/10Ndp6DTaW8914wQF9BIdbleKdqTpz5QA" target="_blank">Veverkosložka</a>
-            <a href="https://docs.google.com/document/d/1txn-sAmEg5Hj5hwL8MdkZXjXL8AAJrtEsg6p3OUppsI" target="_blank">Czechití materiály</a>
-<!--            <a href="sessions.html">Lekce</a>-->
+            <a class="active" href="index.html">Hlavní stránka</a>
             <a href="resources.html">Zdroje</a>
-
+            <a href="https://drive.google.com/drive/folders/10Ndp6DTaW8914wQF9BIdbleKdqTpz5QA" target="_blank">Veverkosložka</a>
         </nav>
     </div>
 </header>
@@ -32,28 +30,104 @@
         <img src="assets/img/team2.jpg" alt="Tým" class="banner-img"/>
     </section>
 
-
-    <section aria-labelledby="next-session">
-        <h2 id="next-session">Příští lekce</h2>
-        <article class="card">
-            <h3>Kariérní workshop: CV a pohovor</h3>
-            <p><strong>Datum:</strong> 18.9.2025 (čtvrtek) · <strong>Čas:</strong> 17:30–19:30</p>
-            <p><strong>Místo konání:</strong> online</p>
-            <p><a href="sessions.html">Všechny lekce →</a></p>
-        </article>
+    <section aria-labelledby="important-dates">
+        <h2 id="important-dates">Nejbližší lekce</h2>
+        <table id="timetable" class="card">
+            <thead>
+            <tr>
+                <th id="timetable-day">Den</th>
+                <th id="timetable-date">Datum</th>
+                <th id="timetable-time">Čas</th>
+                <th id="timetable-type">Typ výuky</th>
+                <th id="timetable-name">Název</th>
+                <th id="timetable-lect">Lektor</th>
+                <th id="timetable-place">Místo</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>PO</td>
+                <td>29.9.2025</td>
+                <td>18:30-19:30</td>
+                <td>nepovinná</td>
+                <td>Git poradna</td>
+                <td>Bára Bložoňová</td>
+                <td>online</td>
+            </tr>
+            <tr>
+                <td>ÚT</td>
+                <td>30.9.2025</td>
+                <td>17:30-20:30</td>
+                <td>lekce</td>
+                <td>Exploratory testing</td>
+                <td>Nikča Mrázová</td>
+                <td>online</td>
+            </tr>
+            <tr>
+                <td>ST</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>ČT</td>
+                <td>2.10.2025</td>
+                <td>17:30-19:30</td>
+                <td>cvičení</td>
+                <td>Verzovací systémy</td>
+                <td>Bára Bložoňová</td>
+                <td>online</td>
+            </tr>
+            <tr>
+                <td>PÁ</td>
+                <td>3.10.2025</td>
+                <td>17:30-20:00</td>
+                <td>exkurze</td>
+                <td>RWS</td>
+                <td></td>
+                <td>ve firmě</td>
+            </tr>
+            <tr>
+                <td>SO</td>
+                <td>4.10.2025</td>
+                <td>9:00-18:00</td>
+                <td>bootcamp</td>
+                <td>Prohlížeče a verzování</td>
+                <td>Bára Bložoňová, Zdeněk Sotolář</td>
+                <td>Czechitas</td>
+            </tr>
+            <tr>
+                <td>NE</td>
+                <td>5.10.2025</td>
+                <td>9:00-16:00</td>
+                <td>bootcamp</td>
+                <td>Prohlížeče a verzování</td>
+                <td>Pavel Veverka + PO</td>
+                <td>Czechitas</td>
+            </tr>
+            </tbody>
+        </table>
     </section>
 
 
     <section aria-labelledby="quick-links">
         <h2 id="quick-links">Rychlé odkazy</h2>
         <ul class="grid">
-            <li><a class="card" href="https://sites.google.com/czechitas.cz/datbp2025/home/" target="_blank"><span>DA Rozcestník</span></a>
+            <li>
+                <a class="card" href="https://sites.google.com/czechitas.cz/datbp2025/home/" target="_blank">DA Rozcestník</a>
             </li>
-            <li><a class="card"
-                   href="https://docs.google.com/spreadsheets/d/1tAWkIoiNeIaKDfnx4Y8s4Zkvb2jTjCOVZ6E1lU3PvJg"
-                   target="_blank"><span>Rozvrh</span></a></li>
-            <li><a class="card" href="https://vyuka.czechitas.cz/course/view.php?id=130"
-                   target="_blank"><span>Moodle</span></a></li>
+            <li>
+                <a class="card" href="https://docs.google.com/spreadsheets/d/1tAWkIoiNeIaKDfnx4Y8s4Zkvb2jTjCOVZ6E1lU3PvJg" target="_blank">Rozvrh</a>
+            </li>
+            <li>
+                <a class="card" href="https://vyuka.czechitas.cz/course/view.php?id=130" target="_blank">Moodle</a>
+            </li>
+            <li>
+                <a class="card" href="https://docs.google.com/document/d/1txn-sAmEg5Hj5hwL8MdkZXjXL8AAJrtEsg6p3OUppsI" target="_blank">Materiály</a>
+            </li>
         </ul>
     </section>
 
